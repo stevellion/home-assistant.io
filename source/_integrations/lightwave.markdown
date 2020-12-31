@@ -118,3 +118,18 @@ lightwave:
           name: Bedroom TRV
           serial: E84902            # Serial number of the TRV - found in the Lightwave App, or web site
 ```
+# Troubleshooting
+It is purely the Room and Device Numbers that trigger the devices, but they may not be in the order shown in the LightwareRF App.  Actual Room numbers are not displayed.
+Therefore as a suggestion, if you have 3 rooms, configure 4 rooms with 2 switches, just called R1D1, R1D2, R2D1 - and test each switch to confirm the room assignments.
+# Example
+  lights:
+    R1D1:
+      name: R1D1
+    R1D2:
+      name: R1D2
+    R2D1
+      name: R2D1
+    R2D2
+      name: R2D2
+      etc etc.
+ When you have confirmed the assignments, then update name to how you want to see them in HomeAssistant
